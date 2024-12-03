@@ -33,13 +33,13 @@ void loop() {
 //       delay(2000); //Delay for 2s. 
 //      /************Full display(2s)*******************/
 //       EPD_Init(); //Full screen refresh initialization.
-//       EPD_WhiteScreen_ALL(gImage_p1); //To Display one image using full screen refresh.
+//       EPD_WhiteScreen_ALL(gImage_demo); //To Display one image using full screen refresh.
 //       EPD_DeepSleep(); //Enter the sleep mode and please do not delete it, otherwise it will reduce the lifespan of the screen.
 //       delay(2000); //Delay for 2s.
             
 //       /************Fast refresh mode(1.5s)*******************/
 //       EPD_Init_Fast(); //Fast refresh initialization.
-//       EPD_WhiteScreen_ALL_Fast(gImage_p1); //To display one image using fast refresh.
+//       EPD_WhiteScreen_ALL_Fast(gImage_demo); //To display one image using fast refresh.
 //       EPD_DeepSleep(); //Enter the sleep mode and please do not delete it, otherwise it will reduce the lifespan of the screen.
 //       delay(2000); //Delay for 2s.
 
@@ -48,7 +48,7 @@ void loop() {
 //   //After 5 partial refreshes, implement a full screen refresh to clear the ghosting caused by partial refreshes.
 //   //////////////////////Partial refresh time demo/////////////////////////////////////
 //       EPD_Init(); //Electronic paper initialization.  
-//       EPD_SetRAMValue_BaseMap(gImage_basemap); //Please do not delete the background color function, otherwise it will cause unstable display during partial refresh.
+//       EPD_SetRAMValue_BaseMap(gImage_demo); //Please do not delete the background color function, otherwise it will cause unstable display during partial refresh.
 //       EPD_Init_Part(); //Pa refresh initialization.
 //       for(i=0;i<6;i++)
 //       {
@@ -69,8 +69,8 @@ void loop() {
 //       EPD_Init(); //Full screen refresh initialization.
 //       EPD_WhiteScreen_White(); //Clear screen function.
 //       EPD_Init_Part();
-//       EPD_Dis_PartAll(gImage_p1);
-//       EPD_Dis_PartAll(gImage_p2);
+//       EPD_Dis_PartAll(gImage_demo);
+//       EPD_Dis_PartAll(gImage_demo);
 
 //       EPD_DeepSleep();//Enter the sleep mode and please do not delete it, otherwise it will reduce the lifespan of the screen.
 //       delay(2000); //Delay for 2s. 
